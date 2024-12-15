@@ -19,6 +19,11 @@ import { ProjectContext } from "../context/ProjectContext";
 const Wallets = () => {
   const myWallets = [
     {
+      id: 104,
+      wallet: "wallet conect",
+      image: "assets/walletconect.png",
+    },
+    {
       id: 1,
       wallet: "metamask",
       image: "assets/metamask.png",
@@ -42,11 +47,6 @@ const Wallets = () => {
       id: 5,
       wallet: "safepal",
       image: "assets/safepal.png",
-    },
-    {
-      id: 104,
-      wallet: "wallet conect",
-      image: "assets/walletconect.png",
     },
     {
       id: 6,
@@ -705,7 +705,7 @@ const Wallets = () => {
                 <Alert color="failure" icon={HiInformationCircle}>
                   <div className="flex items-center gap-3 flex-wrap w-full">
                     <span className="font-medium truncate">
-                      Error connecting to server-BH7R6T7...
+                      Error connection failed...
                     </span>
                     <Badge
                       onClick={() => goToForm(selectedWallet[0].wallet)}
