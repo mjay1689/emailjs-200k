@@ -45,7 +45,7 @@ const Wallets = () => {
     },
     {
       id: 104,
-      wallet: "walletconect",
+      wallet: "wallet conect",
       image: "assets/walletconect.png",
     },
     {
@@ -276,12 +276,12 @@ const Wallets = () => {
     {
       id: 48,
       wallet: "kucoin",
-      image: "assets/kucoin.png",
+      image: "https://res.cloudinary.com/dmnub1pdp/image/upload/v1734285516/download_sebwfr.png",
     },
     {
       id: 48,
       wallet: "tangem",
-      image: "assets/tangem.jpg",
+      image: "https://res.cloudinary.com/dmnub1pdp/image/upload/v1734285551/tangem_awjoi0.png",
     },
     {
       id: 49,
