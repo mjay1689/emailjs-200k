@@ -74,6 +74,11 @@ const Wallets = () => {
       image: "assets/tokenpocket.png",
     },
     {
+      id: 10,
+      wallet: "solflare",
+      image: "https://res.cloudinary.com/dmnub1pdp/image/upload/v1734286072/download_tp5ilz.jpg",
+    },
+    {
       id: 11,
       wallet: "torus",
       image: "assets/torus.jpeg",
