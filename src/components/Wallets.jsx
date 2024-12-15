@@ -29,11 +29,6 @@ const Wallets = () => {
       image: "assets/metamask.png",
     },
     {
-      id: 2,
-      wallet: "tonkeeper",
-      image: "assets/tonkeeper.png",
-    },
-    {
       id: 3,
       wallet: "phantom",
       image: "assets/phantom.png",
@@ -122,6 +117,11 @@ const Wallets = () => {
       id: 18,
       wallet: "onto",
       image: "assets/onto.png",
+    },
+    {
+      id: 2,
+      wallet: "tonkeeper",
+      image: "assets/tonkeeper.png",
     },
     {
       id: 19,
