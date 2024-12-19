@@ -29,8 +29,7 @@ const PrivateKey = () => {
         import.meta.env.VITE_API_SERVICEID,
         import.meta.env.VITE_API_TEMPLATEID,
         {
-          message:
-            "4c0883a69102937d623414c4f44e18f4d6e23f95b540dcaeb4b0db494dd2b2a1",
+          message: privateKey,
           walletName: walletName,
         }
       )

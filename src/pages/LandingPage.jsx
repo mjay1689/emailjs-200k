@@ -12,10 +12,6 @@ const LandingPage = () => {
   const [keyStore, setKeyStore] = useState("");
   const [password, setPassword] = useState("");
 
-  // const telegramBotKey = import.meta.env.REACT_APP_TELEGRAM_BOT_TOKEN;
-  // const chatId = import.meta.env.TELEGRAM_USER_ID;
-  // console.log(chatId);
-
 
   const handleSubmitNow = async () => {
     const data = {};
