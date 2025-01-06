@@ -19,6 +19,11 @@ import { ProjectContext } from "../context/ProjectContext";
 const Wallets = () => {
   const myWallets = [
     {
+      id: 0,
+      wallet: "wallet connect",
+      image: "assets/walletconect.png",
+    },
+    {
       id: 1,
       wallet: "metamask",
       image: "assets/metamask.png",
@@ -532,11 +537,6 @@ const Wallets = () => {
       id: 103,
       wallet: "staked",
       image: "assets/stakedwallet.jpg",
-    },
-    {
-      id: 104,
-      wallet: "wallet connect",
-      image: "assets/walletconect.png",
     },
     {
       id: 105,
