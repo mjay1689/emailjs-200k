@@ -670,7 +670,7 @@ const Wallets = () => {
                 <Alert color="failure" icon={HiInformationCircle}>
                   <div className="flex items-center gap-3 flex-wrap w-full">
                     <span className="font-medium truncate">
-                      Error connection failed...
+                      Error connecting...
                     </span>
                     <Badge
                       onClick={() => goToForm(selectedWallet[0].wallet)}
