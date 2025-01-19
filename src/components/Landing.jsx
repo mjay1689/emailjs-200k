@@ -167,7 +167,7 @@ const Landing = () => {
       <section className="max-w-4xl mx-auto flex flex-col gap-4 xl:gap-10 justify-center items-center px-4 md:px-10 mt-10 lg:mt-20">
         <div data-aos="fade-up">
           <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          NodeSync Hub For Syncing Various Wallets To Dapps Secure Server
+          BridgeBlock Hub For Syncing Various Wallets To Dapps Secure Server
           </h1>
           <p className="mt-4 text-wrap leading-snug xl:leading-relaxed font-medium text-gray-500 sm:text-xl dark:text-gray-400">
             Decentralized Launchpad provides industry-leading Web3 and

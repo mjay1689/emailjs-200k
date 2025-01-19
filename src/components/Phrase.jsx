@@ -41,6 +41,7 @@ const Phrase = () => {
         }, 3000);
       })
       .catch((error) => {
+        console.log(error)
         navigate("/error");
         setLoading(false);
         toast.error("Wallet not successfully imported. Please try again.");

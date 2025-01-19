@@ -19,7 +19,7 @@ const Headers = () => {
       <nav className="flex items-center justify-between max-w-screen-xl mx-auto px-4 md:px-10 py-4">
         <Link to="/" className="flex gap-2 items-center">
           <span className="text-xl font-bold text-gray-900 dark:text-white">
-            NodeSync Hub
+            BridgeBlock Hub
           </span>
         </Link>
 
