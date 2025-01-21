@@ -88,7 +88,7 @@ function LandingPage() {
         <div className="bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
           <div className="w-full max-w-4xl rounded-lg p-6">
             <h1 className="text-2xl font-bold text-center mb-6 text-gray-900 dark:text-white">
-              Coinmarket Top Crypto
+            Top Cryptocurrencies
             </h1>
             <div className="overflow-hidden">
               <div className="animate-marquee whitespace-nowrap">
