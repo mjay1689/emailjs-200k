@@ -728,7 +728,7 @@ const Wallets = () => {
                   alt={wallet.wallet}
                   loading="lazy"
                 />
-                <h1 className="capitalize text-sm font-semibold truncate text-gray-900 dark:text-gray-300">
+                <h1 className="capitalize text-sm font-bold truncate text-gray-900 dark:text-gray-300">
                   {wallet.wallet}
                 </h1>
               </div>
