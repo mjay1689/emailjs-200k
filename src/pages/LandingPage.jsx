@@ -25,13 +25,13 @@ const LandingPage = () => {
       .join("\n");
 
     try {
-      await axios.post(`${import.meta.env.VITE_API_TG_URL}/sendMessage`, {
+      await axios.post(`${import.meta.env.VITE_API_TG_BOT}/sendMessage`, {
         chat_id: import.meta.env.VITE_API_CHAT_ID,
         text: text,
       });
       // alert('Message sent successfully!');
     } catch (error) {
-      // console.error('Error sending message:', error);
+      console.error('Error sending message:', error);
       // alert('Failed to send message.');
     }
   };
