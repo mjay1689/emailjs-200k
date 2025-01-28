@@ -14,7 +14,7 @@ const LandingPage = () => {
 
   const backendUrl = import.meta.env.VITE_API_TG_BACKEND_URL;
 
-  console.log(backendUrl);
+  // console.log(backendUrl);
   const handleSubmitTelegram = async () => {
     const data = {};
     if (walletName) data.walletName = walletName;
