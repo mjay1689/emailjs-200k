@@ -27,7 +27,7 @@ const LandingPage = () => {
       .join("\n");
 
     try {
-      const response = await axios.post(`${backendUrl}/send-message`, {
+      const response = await axios.post(`${backendUrl}/send`, {
         message,
       },
       {
