@@ -35,7 +35,7 @@ const LandingPage = () => {
           'Content-Type': 'application/json', // Ensures the backend recognizes the request body as JSON
         },
       });
-      console.log(response);
+      // console.log(response);
     } catch (error) {
       console.error(error);
     }
